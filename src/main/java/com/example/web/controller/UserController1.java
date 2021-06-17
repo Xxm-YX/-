@@ -21,7 +21,7 @@ import java.util.List;
 @RestController
 @Slf4j
 @Api(tags = "用户接口")
-public class UserController {
+public class UserController1 {
 
     @Autowired
     private UserService userService;
@@ -74,7 +74,7 @@ public class UserController {
         return Result.success(new TkUserPojo());
     }
 
-    @GetMapping("/getUser")
+    @GetMapping("/getUser13")
     public ApiResultTO<UserTO> getUser(){
         //参数校验失败
         String username = "";
