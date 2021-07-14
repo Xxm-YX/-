@@ -4,6 +4,8 @@ import com.example.aspect.ApiLog;
 import com.example.domain.Result;
 import com.example.domain.User;
 import com.example.valid.ValidationList;
+import com.example.web.A;
+import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -42,4 +44,12 @@ public class UserController4 {
     public void a(@PathVariable("a") UUID a){
         System.out.println(a);
     }
+
+
+    @PostMapping("/a")
+    public void a(@RequestBody A c){
+        System.out.println(c);
+    }
+
+
 }
